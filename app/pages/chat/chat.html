@@ -1,0 +1,16 @@
+<ion-navbar *navbar>
+  <ion-title>Simple Chat App</ion-title>
+  <ion-buttons end>
+    <button (click)="logout()">
+          <ion-icon name="log-out"></ion-icon>
+      </button>
+  </ion-buttons>
+</ion-navbar>
+
+<ion-content padding class="getting-started">
+
+  <h3>Chat</h3>
+
+  <chat-list></chat-list>
+  <chat-input></chat-input>
+</ion-content>
