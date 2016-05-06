@@ -10,8 +10,7 @@ import {FirebaseAuth, AngularFire, FirebaseListObservable} from 'angularfire2';
                 <input class="message_input" #newMessage placeholder="Type your message here..." />
             </div>
             <div class="send_message" (click)="send(newMessage)">
-                <div class="icon"></div>
-                <div class="text">Send</div>
+                <div class="text"><ion-icon name="send"></ion-icon></div>
             </div>
         </div>
         <div *ngIf="!(auth | async)" class="title">Please login to join this chat</div>

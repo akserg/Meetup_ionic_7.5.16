@@ -16,9 +16,7 @@ import {
         defaultFirebase('https://meetup07052016.firebaseio.com'),
         firebaseAuthConfig({
           provider: AuthProviders.Twitter,
-          method: AuthMethods.Popup,
-          remember: 'default',
-          scope: ['email']
+ 	      method: AuthMethods.Popup
         })
     ],
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
