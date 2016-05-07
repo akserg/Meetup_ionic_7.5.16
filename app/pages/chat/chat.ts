@@ -9,14 +9,10 @@ import {ChatInput} from '../../share/chat-input';
   directives: [ChatList, ChatInput]
 })
 export class ChatPage {
-  name: string = '';
 
-  constructor(private auth: FirebaseAuth, private nav: NavController) {
-    this.name = this.auth.getAuth().twitter.displayName;
-  }
+  constructor(private auth: FirebaseAuth, private nav: NavController) { }
 
   logout() {
-    this.name = '';
     this.auth.logout();
     this.nav.setRoot(HelloPage);
   }
